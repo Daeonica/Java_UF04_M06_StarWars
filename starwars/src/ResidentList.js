@@ -78,6 +78,7 @@ export function ResidentList({ residents }) {
                                 <p>There are no residents in this planet</p>
                             )
                         ) : (
+                            
                             <ul className="list-group">
                                 {residentNames.map((resident) => (
                                     <li key={resident.name} className="list-group-item">

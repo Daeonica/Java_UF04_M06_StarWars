@@ -44,6 +44,10 @@ export function PlanetList({ onPlanetClick }) {
   return (
     <div>
       {isLoading && <div className="loading-icon">Loading...</div>} {/* Mostrar el icono de carga si isLoading es verdadero */}
+      <div className="card">
+      <div className="card-header">
+        <h2>Planet's list</h2>
+      </div>
       <table className="table table-striped">
         <thead>
           <tr>
@@ -79,6 +83,8 @@ export function PlanetList({ onPlanetClick }) {
           </li>
         </ul>
       </nav>
+      </div>
+      <br></br>
     </div>
   );
 }

@@ -12,6 +12,13 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+
+h1{
+  font-family: 'Star Wars', sans-serif;
+  text-shadow: -2px -2px 0 #ffd900, 1px -1px 0 #ffd900, -1px 1px 0 #ffd900, 1px 1px 0 #ffd900;
+
+}
 
 .App-header {
   background-color: #282c34;
@@ -52,9 +59,29 @@
 }
 
 .pagination-button:hover {
-  background-color: #0069d9;
+  background-color: #cececeae;
+}
+.list-group-item{
+  background-color: #f0f0f0d1!important;
+
 }
 
 .table th, .table td {
   width: 25%;
 }
+#root {
+  background-image: url('https://t3.ftcdn.net/jpg/01/02/88/40/360_F_102884000_9nDhPvgQwwaNgDWbAwUJVR0puNDOMYhL.jpg');
+  background-size: cover;
+}
+body {
+  background-image: url('https://t3.ftcdn.net/jpg/01/02/88/40/360_F_102884000_9nDhPvgQwwaNgDWbAwUJVR0puNDOMYhL.jpg');
+  background-size: cover;
+}
+.table{
+  background-color: #dadadadb;
+}
+.card{
+  background-color: #dadadadb!important;
+}
+
+

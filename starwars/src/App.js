@@ -1,6 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import PlanetDetails from './PlanetDetails';
 import PlanetList from './PlanetList';
+import './App.css';
+
+
 
 function App() {
   const [planets] = useState([]);
@@ -20,15 +23,22 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Planets of Star Wars and their residents</h1>
+      <br></br>
+      <h1 className="text-center">Planets of Star Wars and their residents</h1>
       {selectedPlanet && showResidents ? (
         //Cuando se clicka en un planeta, se visualiza el componente PlanetDetails, sino se visualiza PlanetList
-        <PlanetDetails planet={selectedPlanet} onBackClick={handleBackClick} />
+        <>
+          <PlanetDetails planet={selectedPlanet} onBackClick={handleBackClick} />
+          <br></br>
+
+        </>
+
       ) : (
         <>
           {showResidents === false && (
             <>
               <PlanetList planets={planets} onPlanetClick={handlePlanetClick} />
+              <br></br>
             </>
           )}
         </>
